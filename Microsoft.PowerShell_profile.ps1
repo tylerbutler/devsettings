@@ -1,6 +1,32 @@
-﻿
-# Load posh-git example profile
-. 'C:\tools\poshgit\dahlbyk-posh-git-22f4e77\profile.example.ps1'
+﻿### POSH GIT START ###
+Push-Location (Split-Path -Path $MyInvocation.MyCommand.Definition -Parent)
+
+# If module is installed in a default location ($env:PSModulePath),
+# use this instead (see about_Modules for more information):
+Import-Module posh-git
+
+# Set up a simple prompt, adding the git prompt parts inside git repos
+function global:prompt {
+    $realLASTEXITCODE = $LASTEXITCODE
+
+    # Reset color, which can be messed up by Enable-GitColors
+    $Host.UI.RawUI.ForegroundColor = $GitPromptSettings.DefaultForegroundColor
+
+    Write-Host($pwd.ProviderPath) -nonewline
+
+    Write-VcsStatus
+
+    $global:LASTEXITCODE = $realLASTEXITCODE
+    return "> "
+}
+
+Enable-GitColors
+
+Pop-Location
+
+Start-SshAgent -Quiet
+
+### POSH GIT END ###
 
 # Aliases and their functions
 function subl { &"${Env:ProgramFiles}\Sublime Text 2\sublime_text.exe" $args }
@@ -12,5 +38,4 @@ New-Alias ex explorer
 New-Alias st subl
 
 # Load Jump-Location profile
-Import-Module 'C:\Chocolatey\lib\Jump-Location.0.5.1\tools\Jump.Location.psd1'
-
+Import-Module 'C:\ProgramData\chocolatey\lib\Jump-Location.0.6.0\tools\Jump.Location.psd1'
