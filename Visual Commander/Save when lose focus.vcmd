@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SerializableSnippets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <commands />
+  <extensions>
+    <Snippet>
+      <id>1</id>
+      <name>Save when lose focus</name>
+      <code>public class E : VisualCommanderExt.IExtension
+{
+    public void SetSite(EnvDTE80.DTE2 DTE_, Microsoft.VisualStudio.Shell.Package package)
+    {
+        DTE = DTE_;
+        System.Windows.Application.Current.Deactivated += OnDeactivated;
+    }
+
+    public void Close()
+    {
+        System.Windows.Application.Current.Deactivated -= OnDeactivated;
+    }
+
+    private void OnDeactivated(object sender, System.EventArgs e)
+    {
+        try
+        {
+            DTE.ExecuteCommand("File.SaveAll");
+        }
+        catch (System.Exception ex)
+        {
+        }
+    }
+
+    private EnvDTE80.DTE2 DTE;
+}</code>
+      <referencedAssemblies />
+      <type>Extension</type>
+      <lang>CS</lang>
+      <langVersion>v4.0</langVersion>
+      <enabled>true</enabled>
+      <includeDebugInformation>false</includeDebugInformation>
+    </Snippet>
+  </extensions>
+  <commonCode />
+</SerializableSnippets>
