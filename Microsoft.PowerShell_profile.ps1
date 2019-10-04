@@ -11,8 +11,6 @@ Set-Theme Agnoster
 Set-Variable -name DefaultUser 'tylerbu'
 
 # Aliases and their functions
-function subl { &"${Env:ProgramFiles}\Sublime Text 2\sublime_text.exe" $args }
-
 function windows_explorer { explorer . }
 
 New-Alias e windows_explorer
