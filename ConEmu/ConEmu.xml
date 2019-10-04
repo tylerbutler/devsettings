@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2019-03-20 07:20:14" build="190303">
+		<key name=".Vanilla" modified="2019-10-03 21:59:16" build="180111">
 			<value name="ColorTable00" type="dword" data="00362b00"/>
 			<value name="ColorTable01" type="dword" data="009e864e"/>
 			<value name="ColorTable02" type="dword" data="004c947d"/>
@@ -42,8 +42,8 @@
 			<value name="PopBackColorIdx" type="hex" data="10"/>
 			<value name="ExtendFonts" type="hex" data="00"/>
 			<value name="ExtendFontNormalIdx" type="hex" data="01"/>
-			<value name="ExtendFontBoldIdx" type="hex" data="0C"/>
-			<value name="ExtendFontItalicIdx" type="hex" data="0D"/>
+			<value name="ExtendFontBoldIdx" type="hex" data="0c"/>
+			<value name="ExtendFontItalicIdx" type="hex" data="0d"/>
 			<value name="CursorTypeActive" type="dword" data="000232c1"/>
 			<value name="CursorTypeInactive" type="dword" data="00823283"/>
 			<value name="ClipboardDetectLineEnd" type="hex" data="01"/>
@@ -58,7 +58,7 @@
 			<value name="TrueColorerSupport" type="hex" data="01"/>
 			<value name="FadeInactive" type="hex" data="01"/>
 			<value name="FadeInactiveLow" type="hex" data="00"/>
-			<value name="FadeInactiveHigh" type="hex" data="D0"/>
+			<value name="FadeInactiveHigh" type="hex" data="d0"/>
 			<value name="ConVisible" type="hex" data="00"/>
 			<value name="ConInMode" type="dword" data="ffffffff"/>
 			<value name="UseInjects" type="hex" data="01"/>
@@ -78,10 +78,11 @@
 			<value name="StoreTaskbarkTasks" type="hex" data="01"/>
 			<value name="StoreTaskbarCommands" type="hex" data="00"/>
 			<value name="CmdLineHistory" type="multi">
+				<line data="&quot;C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe&quot;"/>
 				<line data="{Powershell Admin}"/>
 				<line data="{enlistments}"/>
-				<line data="{q4}"/>
 				<line data="{tenantwac}"/>
+				<line data="{q4}"/>
 			</value>
 			<value name="SingleInstance" type="hex" data="01"/>
 			<value name="ShowHelpTooltips" type="hex" data="01"/>
@@ -103,37 +104,37 @@
 			<value name="Multi.SplitWidth" type="hex" data="04"/>
 			<value name="Multi.SplitHeight" type="hex" data="04"/>
 			<value name="KeyboardHooks" type="hex" data="01"/>
-			<value name="FontName" type="string" data="PragmataPro Mono"/>
-			<value name="FontName2" type="string" data="Consolas"/>
+			<value name="FontName" type="string" data="DelugiaCode NF"/>
+			<value name="FontName2" type="string" data="PragmataPro Mono Liga"/>
 			<value name="FontAutoSize" type="hex" data="00"/>
-			<value name="FontSize" type="ulong" data="16"/>
+			<value name="FontSize" type="ulong" data="18"/>
 			<value name="FontSizeX" type="ulong" data="0"/>
 			<value name="FontSizeX2" type="ulong" data="0"/>
 			<value name="FontSizeX3" type="ulong" data="0"/>
 			<value name="FontCharSet" type="hex" data="00"/>
-			<value name="Anti-aliasing" type="ulong" data="4"/>
+			<value name="Anti-aliasing" type="ulong" data="6"/>
 			<value name="FontBold" type="hex" data="00"/>
 			<value name="FontItalic" type="hex" data="00"/>
 			<value name="Monospace" type="hex" data="01"/>
 			<value name="BackGround Image show" type="hex" data="00"/>
 			<value name="BackGround Image" type="string" data="c:\back.bmp"/>
-			<value name="bgImageDarker" type="hex" data="FF"/>
+			<value name="bgImageDarker" type="hex" data="ff"/>
 			<value name="bgImageColors" type="dword" data="ffffffff"/>
 			<value name="bgOperation" type="hex" data="00"/>
 			<value name="bgPluginAllowed" type="hex" data="01"/>
-			<value name="AlphaValue" type="hex" data="FF"/>
+			<value name="AlphaValue" type="hex" data="ff"/>
 			<value name="AlphaValueSeparate" type="hex" data="00"/>
-			<value name="AlphaValueInactive" type="hex" data="FF"/>
+			<value name="AlphaValueInactive" type="hex" data="ff"/>
 			<value name="UserScreenTransparent" type="hex" data="00"/>
 			<value name="ColorKeyTransparent" type="hex" data="00"/>
 			<value name="ColorKeyValue" type="dword" data="00010101"/>
 			<value name="UseCurrentSizePos" type="hex" data="01"/>
 			<value name="WindowMode" type="dword" data="0000051f"/>
-			<value name="ConWnd Width" type="dword" data="00000097"/>
-			<value name="ConWnd Height" type="dword" data="0000003d"/>
+			<value name="ConWnd Width" type="dword" data="00000070"/>
+			<value name="ConWnd Height" type="dword" data="00000035"/>
 			<value name="Cascaded" type="hex" data="01"/>
-			<value name="ConWnd X" type="long" data="907"/>
-			<value name="ConWnd Y" type="long" data="370"/>
+			<value name="ConWnd X" type="long" data="1037"/>
+			<value name="ConWnd Y" type="long" data="84"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="AutoSaveSizePos" type="hex" data="00"/>
 			<value name="IntegralSize" type="hex" data="00"/>
@@ -143,7 +144,7 @@
 			<value name="HideChildCaption" type="hex" data="01"/>
 			<value name="FocusInChildWindows" type="hex" data="01"/>
 			<value name="HideCaptionAlways" type="hex" data="01"/>
-			<value name="HideCaptionAlwaysFrame" type="hex" data="FF"/>
+			<value name="HideCaptionAlwaysFrame" type="hex" data="ff"/>
 			<value name="HideCaptionAlwaysDelay" type="ulong" data="2000"/>
 			<value name="HideCaptionAlwaysDisappear" type="ulong" data="2000"/>
 			<value name="DownShowHiddenMessage" type="hex" data="00"/>
@@ -170,19 +171,19 @@
 			<value name="CTS.ActMode" type="hex" data="02"/>
 			<value name="CTS.RBtnAction" type="hex" data="03"/>
 			<value name="CTS.MBtnAction" type="hex" data="00"/>
-			<value name="CTS.ColorIndex" type="hex" data="E0"/>
+			<value name="CTS.ColorIndex" type="hex" data="e0"/>
 			<value name="ClipboardConfirmEnter" type="hex" data="00"/>
 			<value name="ClipboardConfirmLonger" type="ulong" data="0"/>
 			<value name="FarGotoEditorOpt" type="hex" data="01"/>
-			<value name="FarGotoEditorPath" type="string" data='far.exe /e%1:%2 "%3"'/>
-			<value name="FixFarBorders" type="hex" data="00"/>
+			<value name="FarGotoEditorPath" type="string" data="far.exe /e%1:%2 &quot;%3&quot;"/>
+			<value name="FixFarBorders" type="hex" data="01"/>
 			<value name="FixFarBordersRanges" type="string" data="2013-25C4;"/>
 			<value name="ExtendUCharMap" type="hex" data="01"/>
 			<value name="EnhanceGraphics" type="hex" data="01"/>
 			<value name="EnhanceButtons" type="hex" data="00"/>
-			<value name="PartBrush75" type="hex" data="C8"/>
+			<value name="PartBrush75" type="hex" data="c8"/>
 			<value name="PartBrush50" type="hex" data="96"/>
-			<value name="PartBrush25" type="hex" data="5A"/>
+			<value name="PartBrush25" type="hex" data="5a"/>
 			<value name="PartBrushBlack" type="hex" data="20"/>
 			<value name="RightClick opens context menu" type="hex" data="02"/>
 			<value name="RightClickMacro2" type="string" data=""/>
@@ -334,7 +335,7 @@
 			<value name="Update.CheckOnStartup" type="hex" data="01"/>
 			<value name="Update.CheckHourly" type="hex" data="00"/>
 			<value name="Update.ConfirmDownload" type="hex" data="00"/>
-			<value name="Update.UseBuilds" type="hex" data="01"/>
+			<value name="Update.UseBuilds" type="hex" data="02"/>
 			<value name="Update.UseProxy" type="hex" data="00"/>
 			<value name="Update.Proxy" type="string" data=""/>
 			<value name="Update.ProxyUser" type="string" data=""/>
@@ -486,61 +487,63 @@
 			<value name="DndLKey" type="hex" data="00"/>
 			<value name="DndRKey" type="hex" data="a2"/>
 			<value name="WndDragKey" type="dword" data="00121101"/>
-			<key name="Tasks" modified="2019-03-20 07:20:14" build="190303">
+			<key name="Tasks" modified="2019-10-03 21:59:16" build="180111">
 				<value name="Count" type="long" data="5"/>
-				<key name="Task1" modified="2019-03-20 07:20:14" build="190303">
+				<key name="Task1" modified="2019-10-03 21:59:16" build="180111">
 					<value name="Name" type="string" data="{Powershell Admin}"/>
 					<value name="GuiArgs" type="string" data="/single /Dir %userprofile%"/>
-					<value name="Cmd1" type="string" data='*"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe"  -cur_console:a:t:PS'/>
-					<value name="Active" type="long" data="0"/>
-					<value name="Count" type="long" data="1"/>
-					<value name="Flags" type="dword" data="00000001"/>
-					<value name="Hotkey" type="dword" data="00000000"/>
-				</key>
-				<key name="Task2" modified="2019-03-20 07:20:14" build="190303">
-					<value name="Name" type="string" data="{Powershell Non-Admin}"/>
-					<value name="GuiArgs" type="string" data="/single /Dir %userprofile%"/>
-					<value name="Cmd1" type="string" data='"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -cur_console:t:PS'/>
+					<value name="Cmd1" type="string" data="*&quot;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&quot;  -cur_console:a:t:PS"/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 				</key>
-				<key name="Task3" modified="2019-03-20 07:20:14" build="190303">
-					<value name="Name" type="string" data="{Development}"/>
-					<value name="GuiArgs" type="string" data="/single /Dir %userprofile%"/>
-					<value name="Cmd1" type="string" data='&gt;*"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe"  "-cur_console:a:t:PS"'/>
-					<value name="Active" type="long" data="1"/>
-					<value name="Count" type="long" data="3"/>
-					<value name="Flags" type="dword" data="00000000"/>
-					<value name="Hotkey" type="dword" data="00000000"/>
-					<value name="Cmd2" type="string" data='"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -cur_console:t:PS'/>
-					<value name="Cmd3" type="string" data='%systemroot%\SysWOW64\cmd.exe /c ""%ProgramFiles(x86)%\Git\bin\sh.exe" --login -i" "-cur_console:t:Git Bash"'/>
-				</key>
-				<key name="Task4" modified="2019-03-20 07:20:14" build="190303">
+				<key name="Task2" modified="2019-10-03 21:59:16" build="180111">
 					<value name="Name" type="string" data="{waccosmos}"/>
 					<value name="GuiArgs" type="string" data=""/>
-					<value name="Cmd1" type="string" data='&gt;*C:\Windows\System32\cmd.exe /k "d:\waccosmo\dev\otools\bin\OpenEnlistment.bat" -new_console:d:"d:\waccosmo\dev\waccosmos" -new_console:t:"waccosmos"'/>
+					<value name="Cmd1" type="string" data="&gt;*C:\Windows\System32\cmd.exe /k &quot;d:\waccosmo\dev\otools\bin\OpenEnlistment.bat&quot; -new_console:d:&quot;d:\waccosmo\dev\waccosmos&quot; -new_console:t:&quot;waccosmos&quot;"/>
 					<value name="Active" type="long" data="1"/>
 					<value name="Count" type="long" data="1"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 				</key>
-				<key name="Task5" modified="2019-03-20 07:20:14" build="190303">
+				<key name="Task3" modified="2019-10-03 21:59:16" build="180111">
 					<value name="Name" type="string" data="{tenantwac}"/>
-					<value name="Flags" type="dword" data="00000000"/>
-					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data=""/>
-					<value name="Cmd1" type="string" data='&gt;*C:\Windows\System32\cmd.exe /k "D:\Office\dev\otools\bin\OpenEnlistment.bat" -new_console:d:"D:\Office\dev" -new_console:t:"tenantwac"'/>
+					<value name="Cmd1" type="string" data="&gt;*C:\Windows\System32\cmd.exe /k &quot;D:\Office\dev\otools\bin\OpenEnlistment.bat&quot; -new_console:d:&quot;D:\Office\dev&quot; -new_console:t:&quot;tenantwac&quot;"/>
 					<value name="Active" type="long" data="1"/>
 					<value name="Count" type="long" data="1"/>
+					<value name="Flags" type="dword" data="00000000"/>
+					<value name="Hotkey" type="dword" data="00000000"/>
+					<value name="Cmd2" type="string" data="&quot;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&quot; -cur_console:t:PS"/>
+					<value name="Cmd3" type="string" data="%systemroot%\SysWOW64\cmd.exe /c &quot;&quot;%ProgramFiles(x86)%\Git\bin\sh.exe&quot; --login -i&quot; &quot;-cur_console:t:Git Bash&quot;"/>
+				</key>
+				<key name="Task4" modified="2019-10-03 21:59:16" build="180111">
+					<value name="Name" type="string" data="{Powershell Non-Admin}"/>
+					<value name="GuiArgs" type="string" data="/single /Dir %userprofile%"/>
+					<value name="Cmd1" type="string" data="&quot;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&quot; -cur_console:t:PS"/>
+					<value name="Active" type="long" data="0"/>
+					<value name="Count" type="long" data="1"/>
+					<value name="Flags" type="dword" data="00000000"/>
+					<value name="Hotkey" type="dword" data="00000000"/>
+				</key>
+				<key name="Task5" modified="2019-10-03 21:59:16" build="180111">
+					<value name="Name" type="string" data="{Development}"/>
+					<value name="Flags" type="dword" data="00000000"/>
+					<value name="Hotkey" type="dword" data="00000000"/>
+					<value name="GuiArgs" type="string" data="/single /Dir %userprofile%"/>
+					<value name="Cmd1" type="string" data="&gt;*&quot;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&quot;  &quot;-cur_console:a:t:PS&quot;"/>
+					<value name="Active" type="long" data="1"/>
+					<value name="Count" type="long" data="3"/>
+					<value name="Cmd2" type="string" data="&quot;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&quot; -cur_console:t:PS"/>
+					<value name="Cmd3" type="string" data="%systemroot%\SysWOW64\cmd.exe /c &quot;&quot;%ProgramFiles(x86)%\Git\bin\sh.exe&quot; --login -i&quot; &quot;-cur_console:t:Git Bash&quot;"/>
 				</key>
 				<key name="&lt;Startup&gt;" modified="2019-03-20 07:18:21" build="190303"/>
 			</key>
-			<key name="Apps" modified="2019-03-20 07:18:21" build="190303">
+			<key name="Apps" modified="2019-10-03 21:59:16" build="180111">
 				<value name="Count" type="long" data="0"/>
 			</key>
-			<key name="Colors" modified="2019-03-20 07:18:21" build="190303">
+			<key name="Colors" modified="2019-10-03 21:59:16" build="180111">
 				<value name="Count" type="long" data="0"/>
 			</key>
 			<value name="StartCreateDelay" type="ulong" data="100"/>
@@ -564,19 +567,6 @@
 			<value name="UseScrollLock" type="hex" data="01"/>
 			<value name="EnvironmentSet" type="multi">
 				<line data="set PATH=%ConEmuBaseDir%\Scripts;%PATH%"/>
-				<line data=" "/>
-				<line data="# set ConEmuPromptNames=NO"/>
-				<line data="# set ConEmuPromptNL=NO"/>
-				<line data="# set ConEmuSudoSplit=NO"/>
-				<line data="# set ConEmuSudoConfirm=NO"/>
-				<line data=" "/>
-				<line data="# set LANG=ru_RU.utf8"/>
-				<line data="# set LANG=ru_RU.CP1251"/>
-				<line data=" "/>
-				<line data='# alias cdc=cd /d "%ConEmuDir%"'/>
-				<line data='# alias cd~=cd /d "%UserProfile%"'/>
-				<line data="# alias gl=git-log"/>
-				<line data="# alias glb=git-log --branches --date-order"/>
 			</value>
 			<value name="CTS.Intelligent" type="hex" data="01"/>
 			<value name="CTS.IntelligentExceptions" type="string" data="far|vim"/>
@@ -602,7 +592,7 @@
 			<value name="RetardInactivePanes" type="hex" data="00"/>
 			<value name="Update.InetTool" type="hex" data="00"/>
 			<value name="Update.InetToolCmd" type="string" data=""/>
-			<key name="HotKeys" modified="2019-03-20 07:18:21" build="190303">
+			<key name="HotKeys" modified="2019-10-03 21:59:16" build="180111">
 				<value name="KeyMacroVersion" type="hex" data="02"/>
 				<value name="Multi.Modifier" type="dword" data="0000005b"/>
 				<value name="Multi.ArrowsModifier" type="dword" data="0000005b"/>
@@ -772,13 +762,13 @@
 				<value name="KeyMacro31.Text" type="string" data=""/>
 				<value name="KeyMacro32" type="dword" data="00000000"/>
 				<value name="KeyMacro32.Text" type="string" data=""/>
-				<value name="CTS.VkBlock" type="hex" data="A4"/>
+				<value name="CTS.VkBlock" type="hex" data="a4"/>
 				<value name="CTS.VkText" type="hex" data="00"/>
 				<value name="CTS.VkAct" type="hex" data="00"/>
-				<value name="CTS.VkPrompt" type="hex" data="A0"/>
-				<value name="FarGotoEditorVk" type="hex" data="A2"/>
+				<value name="CTS.VkPrompt" type="hex" data="a0"/>
+				<value name="FarGotoEditorVk" type="hex" data="a2"/>
 				<value name="DndLKey" type="hex" data="00"/>
-				<value name="DndRKey" type="hex" data="A2"/>
+				<value name="DndRKey" type="hex" data="a2"/>
 				<value name="WndDragKey" type="dword" data="00121101"/>
 				<value name="CheckUpdates" type="dword" data="00105b55"/>
 				<value name="Multi.NewWndConfirm" type="dword" data="00000000"/>
@@ -812,14 +802,14 @@
 			<value name="SuppressBells" type="hex" data="01"/>
 			<value name="JumpListAutoUpdate" type="hex" data="01"/>
 			<value name="CompressLongStrings" type="hex" data="01"/>
-			<value name="LastMonitor" type="string" data="0,0,3700,2160"/>
+			<value name="LastMonitor" type="string" data="0,0,3658,2160"/>
 			<value name="Restore2ActiveMon" type="hex" data="00"/>
 			<value name="RestoreInactive" type="hex" data="00"/>
 			<value name="DynamicBufferHeight" type="hex" data="01"/>
 			<value name="CTS.ResetOnRelease" type="hex" data="00"/>
 			<value name="CTS.EraseBeforeReset" type="hex" data="01"/>
 			<value name="AutoTrimSingleLine" type="hex" data="00"/>
-			<value name="Anti-aliasing2" type="hex" data="00"/>
+			<value name="Anti-aliasing2" type="hex" data="01"/>
 			<value name="UseAltGrayPlus" type="hex" data="01"/>
 			<value name="MouseDragWindow" type="hex" data="01"/>
 			<value name="DebugLog" type="hex" data="00"/>
@@ -830,4 +820,3 @@
 		</key>
 	</key>
 </key>
-
