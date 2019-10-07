@@ -7,7 +7,7 @@ if (Test-Path($ChocolateyProfile)) {
 # Prompt
 Import-Module posh-git
 Import-Module oh-my-posh
-Set-Theme Agnoster
+Set-Theme tylerbu
 Set-Variable -name DefaultUser 'tylerbu'
 
 # Aliases and their functions
