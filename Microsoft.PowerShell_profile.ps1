@@ -16,3 +16,4 @@ function windows_explorer { explorer . }
 New-Alias e windows_explorer
 New-Alias ex explorer
 New-Alias st subl
+Set-Alias git hub
