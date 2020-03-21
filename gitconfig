@@ -1,16 +1,6 @@
 [alias]
-	delete-merged = !bash -c '\
-		REMOTE=$1 && \
-		REMOTE=${REMOTE:="origin"} && \
-		echo "Fetching $REMOTE" && \
-		git fetch $REMOTE --prune  && \
-		git branch -vv | grep "gone]" | awk \"{ print \\$1 }\" | xargs git branch -d' -
-	delete-merged-force = !bash -c '\
-		REMOTE=$1 && \
-		REMOTE=${REMOTE:="origin"} && \
-		echo "Fetching $REMOTE" && \
-		git fetch $REMOTE --prune  && \
-		git branch -vv | grep "gone]" | awk \"{ print \\$1 }\" | xargs git branch -D' -
+	delete-merged = !bash -c 'REMOTE=$1 && REMOTE=${REMOTE:="origin"} && echo "Fetching $REMOTE" && git fetch $REMOTE --prune  && git branch -vv | grep "gone]" | awk \"{ print \\$1 }\" | xargs git branch -d' -
+	delete-merged-force = !bash -c 'REMOTE=$1 && REMOTE=${REMOTE:="origin"} && echo "Fetching $REMOTE" && git fetch $REMOTE --prune  && git branch -vv | grep "gone]" | awk \"{ print \\$1 }\" | xargs git branch -D' -
 [core]
 	editor = code --wait
 	autocrlf = true
