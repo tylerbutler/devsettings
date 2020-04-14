@@ -3,3 +3,6 @@
 	url = https://github.com/alexkaratarakis/gitattributes
 [submodule "vscode-settings-sync"]
 	url = https://gist.github.com/a142d71843c5e0e599a1afeb72b60b2a.git
+[submodule "fonts"]
+	path = fonts
+	url = https://github.com/tylerbutler/fonts.git
