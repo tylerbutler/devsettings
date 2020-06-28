@@ -82,7 +82,7 @@ HIST_STAMPS="yyyy-mm-dd"
 GIT_AUTO_FETCH_INTERVAL=1200 #in seconds
 MAGIC_ENTER_GIT_COMMAND='git status -u .'
 MAGIC_ENTER_OTHER_COMMAND='ls -lh .'
-plugins=(cp git git-prompt git-auto-fetch github thefuck nvm jump last-working-dir magic-enter zsh-interactive-cd zsh_reload zsh-syntax-highlighting colorize colored-man-pages)
+plugins=(cp git git-prompt git-auto-fetch github thefuck nvm jump last-working-dir magic-enter zsh-interactive-cd zsh_reload zsh-syntax-highlighting colorize colored-man-pages z)
 
 source $ZSH/oh-my-zsh.sh
 
