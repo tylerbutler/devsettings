@@ -6,7 +6,7 @@ export GREN_GITHUB_TOKEN="6771dbfa760eba011126ec7ff0dd8731555e86cd"
 . /home/linuxbrew/.linuxbrew/etc/profile.d/z.sh
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/tylerbu/.oh-my-zsh"
