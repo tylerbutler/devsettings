@@ -9,7 +9,9 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="/home/tylerbu/.oh-my-zsh"
 
-# eval "$(hub alias -s)"
+source /home/tylerbu/code/git-extras/etc/git-extras-completion.zsh
+
+eval "$(hub alias -s)"
 eval $(thefuck --alias f)
 
 # Set name of the theme to load --- if set to "random", it will
