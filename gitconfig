@@ -27,3 +27,8 @@
 	forceSignAnnotated = false
 [hub]
 	protocol = https
+[bulkworkspaces]
+	code = /home/tylerbu/code
+[user]
+	email = tyler@tylerbutler.com
+	name = Tyler Butler
