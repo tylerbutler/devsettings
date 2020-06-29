@@ -11,7 +11,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="/home/tylerbu/.oh-my-zsh"
 
-# eval "$(hub alias -s)"
+eval "$(hub alias -s)"
 eval $(thefuck --alias f)
 
 # Set name of the theme to load --- if set to "random", it will
@@ -19,8 +19,8 @@ eval $(thefuck --alias f)
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
-# ZSH_THEME="agnoster"
-ZSH_THEME="mh"
+ZSH_THEME="agnoster"
+# ZSH_THEME="mh"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -81,10 +81,11 @@ HIST_STAMPS="yyyy-mm-dd"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # defaults
+ZSH_ALIAS_FINDER_AUTOMATIC=true
 GIT_AUTO_FETCH_INTERVAL=1200 #in seconds
 MAGIC_ENTER_GIT_COMMAND='git status -u .'
 MAGIC_ENTER_OTHER_COMMAND='ls -lh .'
-plugins=(cp git git-prompt git-auto-fetch github thefuck nvm jump last-working-dir magic-enter zsh-interactive-cd zsh_reload zsh-syntax-highlighting colorize colored-man-pages)
+plugins=(bgnotify cp command-not-found alias-finder fd git git-prompt git-auto-fetch thefuck nvm jump last-working-dir magic-enter zsh-interactive-cd zsh_reload zsh-syntax-highlighting colorize colored-man-pages)
 
 source $ZSH/oh-my-zsh.sh
 
