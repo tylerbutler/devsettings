@@ -27,3 +27,6 @@
 	forceSignAnnotated = false
 [hub]
 	protocol = https
+[user]
+	email = tyler@tylerbutler.com
+	name = Tyler Butler
