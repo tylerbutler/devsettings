@@ -5,9 +5,10 @@
 	dm-f = !bash -c 'REMOTE=$1 && REMOTE=${REMOTE:="origin"} && echo "Fetching $REMOTE" && git fetch $REMOTE --prune  && git branch -vv | grep "gone]" | awk \"{ print \\$1 }\" | xargs git branch -D' -
 	truncate = !bash -c 'git checkout --orphan temp $1 && git commit -m \"Truncated history\" && git checkout master && git rebase --onto temp $1 master && git branch -D temp'
 [core]
+	autocrlf = false
 	editor = code --wait
 	longpaths = true
-	autocrlf = false
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [diff]
 	tool = bc3
 [difftool "bc3"]
@@ -27,6 +28,20 @@
 	forceSignAnnotated = false
 [hub]
 	protocol = https
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
 [user]
 	email = tyler@tylerbutler.com
 	name = Tyler Butler
