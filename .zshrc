@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 # If you come from bash you might have to change your $PATH.
@@ -12,9 +19,10 @@ eval $(thefuck --alias f)
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
 # ZSH_THEME="agnoster"
-ZSH_THEME="mh"
+# ZSH_THEME="mh"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -77,17 +85,21 @@ HIST_STAMPS="yyyy-mm-dd"
 # defaults
 plugins=(
   alias-finder
+  # alias-tips
+  autoupdate
   bgnotify
-  colored-man-pages
+  # colored-man-pages
   colorize
   command-not-found 
+  command-time
   common-aliases 
   cp
   direnv
   dirhistory
   docker
-  emoji-clock
-  fd
+  # emoji-clock
+  fast-syntax-highlighting
+  # fd
   git
   gitfast
   github
@@ -95,8 +107,8 @@ plugins=(
   git-escape-magic
   git-extras
   git-prompt
-  globalias
-  jump
+  # globalias
+  # jump
   last-working-dir
   magic-enter
   npm
@@ -105,6 +117,7 @@ plugins=(
   profiles
   rand-quote
   rsync
+  solarized-man
   thefuck
   timer
   tmux
@@ -112,7 +125,7 @@ plugins=(
   zsh_reload
   zsh-interactive-cd
   zsh-navigation-tools
-  zsh-syntax-highlighting
+  # zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -151,4 +164,7 @@ fi
 # alias j="jump"
 alias refreshenv="source ~/.zshrc"
 
-quote
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# quote
