@@ -1,19 +1,11 @@
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
-export GREN_GITHUB_TOKEN="6771dbfa760eba011126ec7ff0dd8731555e86cd"
-
-# Set up z
-# . /home/linuxbrew/.linuxbrew/etc/profile.d/z.sh
-
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:/snap/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/tylerbu/.oh-my-zsh"
 
-source /home/tylerbu/code/git-extras/etc/git-extras-completion.zsh
-
-eval "$(hub alias -s)"
 eval $(thefuck --alias f)
 
 # Set name of the theme to load --- if set to "random", it will
@@ -83,11 +75,45 @@ HIST_STAMPS="yyyy-mm-dd"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # defaults
-ZSH_ALIAS_FINDER_AUTOMATIC=true
-GIT_AUTO_FETCH_INTERVAL=1200 #in seconds
-MAGIC_ENTER_GIT_COMMAND='git status -u .'
-MAGIC_ENTER_OTHER_COMMAND='ls -lh .'
-plugins=(bgnotify cp command-not-found alias-finder fd git git-prompt git-auto-fetch thefuck nvm jump last-working-dir magic-enter zsh-interactive-cd zsh_reload zsh-syntax-highlighting colorize colored-man-pages z)
+plugins=(
+  alias-finder
+  bgnotify
+  colored-man-pages
+  colorize
+  command-not-found 
+  common-aliases 
+  cp
+  direnv
+  dirhistory
+  docker
+  emoji-clock
+  fd
+  git
+  gitfast
+  github
+  git-auto-fetch
+  git-escape-magic
+  git-extras
+  git-prompt
+  globalias
+  jump
+  last-working-dir
+  magic-enter
+  npm
+  nvm
+  perms
+  profiles
+  rand-quote
+  rsync
+  thefuck
+  timer
+  tmux
+  z
+  zsh_reload
+  zsh-interactive-cd
+  zsh-navigation-tools
+  zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -98,11 +124,17 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
+# Plugin config
+ZSH_ALIAS_FINDER_AUTOMATIC=true
+GIT_AUTO_FETCH_INTERVAL=3600 # 1 hr in seconds
+MAGIC_ENTER_GIT_COMMAND='git status -u .'
+MAGIC_ENTER_OTHER_COMMAND='ls -lh .'
+
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='code'
 else
-  export EDITOR='mvim'
+  export EDITOR='nano'
 fi
 
 # Compilation flags
@@ -116,9 +148,7 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# alias j="jump"
 alias refreshenv="source ~/.zshrc"
-alias j="jump"
 
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+quote
